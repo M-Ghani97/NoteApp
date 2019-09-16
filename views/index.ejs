@@ -1,0 +1,19 @@
+<div style="margin-top: .5em" class="container">
+        <% note.forEach(note => { %>
+            <div class="row">
+                <div id="cardBody" class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= note.title %></h5><hr>
+                        <div><p class="card-text"><%- note.content %></p></div><hr>
+                        <div style="float: right">
+                            <a style="margin-right: 5px;" href="notes/<%= note._id %>/edit" class="btn btn-outline-primary"><i class="fas fa-pencil-alt"></i> Edit</a>
+                            <form style="display: inline;" action="/notes/<%= note._id %>?_method=DELETE" method="POST">
+                                <button class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i> Delete</button>                   
+                            </form>
+                        </div>
+                        <p> <em> posted by - <%= note.author %></em></p>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+</div>  

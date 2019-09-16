@@ -1,0 +1,23 @@
+body {
+    background: hsl(0, 0%, 10%);
+    padding-top: 86px;
+}
+#mainNav {
+    background: #b7b5a3!important;
+}
+
+#brand {
+    color: black; font-size: 2.25rem; padding-left: 1em;
+}
+
+#home {
+    color: black; font-size: 2.25rem; padding-left: 1em;
+}
+
+#new {
+    color: black; font-size: 2.25rem; padding-right: 1em;
+}
+
+#cardBody {
+    background: #e6f0ef; height: auto; width: 100%
+}
