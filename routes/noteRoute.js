@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router({mergeParams: true});
-var Note = require("../models/blogSchema");
+var Note = require("../models/noteSchema");
 
 //Index Route
 router.get("/notes", (req, res) => {

@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-var Note = require("./models/blogSchema");
+var Note = require("./models/noteSchema");
 
 var seeds = [
     {

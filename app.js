@@ -3,7 +3,7 @@ var mongoose =  require("mongoose");
 var bodyParser = require("body-parser");
 var expressLayout = require("express-ejs-layouts");
 var methodOverride = require("method-override");
-var blogRoute = require("./routes/blogs");
+var noteRoute = require("./routes/noteRoute");
 var seedDB = require("./seed");
 
 //Mongoose Config
@@ -23,7 +23,7 @@ app.use(expressLayout);
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
-app.use(blogRoute);
+app.use(noteRoute);
 
 // seedDB();
 
